@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Team | A1 Wallet</title>
+<meta name="apple-mobile-web-app-title" content="A1 Wallet">
+<meta name="application-name" content="Support Team | A1 Wallet">
+
+<link rel="apple-touch-icon" href="icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#9d4edd">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<style>
+
+:root{
+--bg-color:#0b0b0b;
+--accent:#9d4edd;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:var(--bg-color);
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* HEADER */
+
+header{
+width:100%;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-bottom:1px solid rgba(255,255,255,0.05);
+background:rgba(11,11,11,0.9);
+backdrop-filter:blur(10px);
+}
+
+header img{
+height:45px;
+}
+
+/* BACK BUTTON */
+
+.back-area{
+width:100%;
+max-width:1000px;
+padding:20px;
+}
+
+.back-btn{
+display:flex;
+align-items:center;
+gap:8px;
+height:3em;
+width:120px;
+justify-content:center;
+background:#000;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.back-btn svg{
+fill:white;
+transition:0.3s;
+}
+
+.back-btn:hover svg{
+transform:translateX(-5px);
+}
+
+/* TITLE */
+
+.title{
+font-size:32px;
+margin-top:20px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* SUPPORT CARDS */
+
+.support-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+width:90%;
+max-width:900px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+border-radius:12px;
+padding:30px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:var(--accent);
+}
+
+.card img{
+width:70px;
+}
+
+.card h3{
+font-size:20px;
+}
+
+.contact-btn{
+margin-top:10px;
+padding:12px 25px;
+border-radius:6px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+color:white;
+}
+
+.tg{
+background:#24A1DE;
+}
+
+.wa{
+background:#00D757;
+}
+
+footer{
+margin-top:60px;
+padding:30px;
+color:#555;
+font-size:14px;
+text-align:center;
+width:100%;
+border-top:1px solid #1a1a1a;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<img src="name.png">
+</header>
+
+<div class="back-area">
+
+<button class="back-btn" onclick="location.href='index.html'">
+
+<svg height="16" width="16" viewBox="0 0 1024 1024">
+<path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+</svg>
+
+Back
+
+</button>
+
+</div>
+
+<div class="title">
+Support Team
+</div>
+
+<div class="support-container">
+
+<div class="card">
+
+<img src="tg.webp">
+
+<h3>Telegram Support</h3>
+
+<button class="contact-btn tg"
+onclick="window.open('https://t.me/A1_Wallet_Io')">
+Open Telegram
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="whatsapp.png">
+
+<h3>WhatsApp Support</h3>
+
+<button class="contact-btn wa"
+onclick="window.open('https://api.whatsapp.com/send?phone=+12363056625')">
+Open WhatsApp
+</button>
+
+</div>
+
+</div>
+
+<footer>
+A1 Wallet © 2026 Company
+</footer>
+
+</body>
+</html>
