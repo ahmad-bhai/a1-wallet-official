@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toast" class="toast"></div>
+    <div class="app-container">
+        <img src="back.png" class="back-btn" onclick="location.href='index.html'">
+        <h2>Deposit Funds</h2>
+        <div class="card">
+            <p>Admin Wallet Address:</p>
+            <code id="wallet-addr">TXYZ123...789</code>
+            <button class="btn-main" onclick="showUIFeedback('Address Copied!')">Copy Address</button>
+        </div>
+        <input type="number" id="dep-amount" placeholder="Amount Sent ($)">
+        <input type="text" id="txid" placeholder="Transaction ID">
+        <button class="btn-main" onclick="showUIFeedback('Request Sent to Admin!')">Submit Deposit</button>
+    </div>
+</body>
+</html>
